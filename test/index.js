@@ -28,6 +28,13 @@ describe( 'dom-node-to-html-string', () => {
     fragment.appendChild( text )
     assert.strictEqual( HtmlString( fragment ), '<div></div>hello' )
   })
+  it( 'template', () => {
+    const template = doc.createElement( 'template' )
+    template.setAttribute( 'id', 'foo' )
+    template.innerHTML = '<div>bar</div>'
+
+    assert.strictEqual( HtmlString( template ), '<template id="foo"><div>bar</div></template>' )
+  })
   it( 'processingInstruction', () => {
     const pi = doc.createProcessingInstruction( 'target', 'data' )
     assert.strictEqual( HtmlString( pi ), '<?target data?>' )

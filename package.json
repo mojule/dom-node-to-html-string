@@ -1,6 +1,6 @@
 {
   "name": "@mojule/dom-node-to-html-string",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Get an HTML string from any DOM node",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/mojule/dom-node-to-html-string#readme",
   "dependencies": {
-    "@mojule/dom-node-predicates": "^0.1.1",
+    "@mojule/dom-node-predicates": "^0.1.4",
     "@mojule/mapper": "^0.1.1"
   },
   "devDependencies": {
